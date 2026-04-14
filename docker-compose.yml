@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  deepfake-detector:
+    build: .
+    container_name: deepfake-detector
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./models:/app/models
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
