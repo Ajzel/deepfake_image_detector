@@ -1,2 +1,1 @@
-# deepfake_image_detector
-A Flask web app that detects deepfake images using a custom-trained PyTorch CNN, containerized with Docker.
+This project is a deepfake image detection system built with a custom Convolutional Neural Network (CNN) in PyTorch. Users can upload any image through a simple Flask web interface and receive a confidence score indicating whether the image is authentic or AI-generated. The model is trained on real vs. fake image datasets and served via a Dockerized Flask app for easy local or cloud deployment.
